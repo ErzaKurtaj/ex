@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiwT_tHOCA5AkphzKRWJ_Kp4Fv-yc83aw&libraries=places"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Book Taxi</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Taxi Booking Service</h1>
+        </header>
+
+        <section id="booking">
+            <h2>Book Your Taxi</h2>
+            <div class="foto">
+                <img src="images/taxibook.gif" alt="Taxi Booking">
+            </div>
+            <form id="booking-form">
+                <label for="pickup"><i class="fas fa-map-marker-alt"></i> Pickup Location:</label>
+                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+                <label for="destination"><i class="fas fa-location-arrow"></i> Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+                <button type="submit"><i class="fas fa-taxi"></i> Book Taxi</button>
+            </form>
+        </section>
+
+        <section class="map-container">
+            <div id="map" style="height: 300px; width: 100%;"></div>
+        </section>
+
+        <section class="search">
+            <label for="user-location">User Location:</label>
+            <input type="text" id="user-location">
+            <label for="search-destination">Destination:</label>
+            <input type="text" id="search-destination" placeholder="Write destination">
+            <button type="button" onclick="filterTaxis()">Filter Taxis</button>
+        </section>
+
+        <!-- Available Taxis Section -->
+        <section id="available-taxis">
+            <h2>Available Taxis</h2>
+            <ul id="available-taxi-list"></ul>
+        </section>
+
+        <!-- Booked Taxis Section -->
+        <section id="booked-taxis">
+            <h2>Booked Taxis</h2>
+            <ul id="booked-taxi-list"></ul>
+        </section>
+
+        <!-- Completed Trips Section -->
+        <section id="completed-trips">
+            <h2>Completed Trips</h2>
+            <ul id="completed-trip-list"></ul>
+            
+        </section>
+
+        <section id="driver-rating">
+            <h2>Rate Your Driver</h2>
+            <form id="driver-rating-form">
+                <label for="driver-name">Driver Name:</label>
+                <input type="text" id="driver-name" name="driver-name" required>
+                <label for="driver-rating">Rating (1-5):</label>
+                <input type="number" id="driver-rating" name="driver-rating" min="1" max="5" required>
+                <button type="submit">Submit Rating</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Taxi Services. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,320 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E3DCD2 ;
+  color:#a72525;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #a72525;
+  overflow: hidden;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; /* Adjust space around items */
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background: #E3DCD2 ;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .container {
+      padding: 15px;
+  }
+
+  form input, form button {
+      padding: 10px;
+  }
+
+  #map {
+      height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  form input, form button {
+      padding: 8px;
+  }
+
+  #map {
+      height: 300px;
+  }
+
+  form h2, .taxi-options h2, .history h2 {
+      font-size: 18px;
+  }
+
+  .taxi-option p, .history-entry p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  form input, form button {
+      padding: 6px;
+      font-size: 14px;
+  }
+
+  form label {
+      font-size: 14px;
+  }
+
+  #map {
+      height: 250px;
+  }
+}
+
+.fleet {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.fleet h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #a72525;
+}
+
+.fleet p {
+  margin-bottom: 30px;
+  color:#a72525;
+  font-size: 19px;
+}
+
+.fleet-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fleet-item {
+  text-align: center;
+}
+
+.fleet-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fleet-item p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  background-color:#a72525;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  bottom:0;
+  width: 100%;
+  bottom: 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Information Section */
+.info-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-content img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-text {
+  max-width: 60%;
+}
+
+.info-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #a72525;
+}
+
+.info-text p {
+  font-size: 1.1em;
+  color:#a72525;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #a72525;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-item {
+  max-width: 30%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+  font-size: 1em;
+  color:#a72525;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+  font-size: 1.1em;
+  color:#a72525
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #a72525;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  max-width: 30%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service-item i {
+  font-size: 3em;
+  color: #103761;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color:#a72525; 
+}
+
+.service-item p {
+  font-size: 1em;
+  color:#FFD800;
+}
+
+/* Hero Section */
+.hero {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text {
+  background:#a72525;
+  padding: 20px;
+  width: 100%;
+  height:115px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 10px 0;
+ height: 30px;
+}
+
+.hero-text .btn {
+  background-color:#E3DCD2;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.hero-text .btn:hover {
+  background-color:#9e9a9a;
+  color: white;
+  font-weight: bold;
+}
+
+.service-item  i.fas.fa-taxi,i.fas.fa-plane, i.fas.fa-users{
+  color:#FFD800;
+}
